@@ -6,7 +6,11 @@ namespace CSharpIntro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Customer customer1 = new Customer() { Adi = "Emre", SoyAdi = "Çelik", Maas = 4000 };
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(customer1);
+            Console.WriteLine("*******************");
+            customerManager.Delete(customer1);
         }
     }
 }
